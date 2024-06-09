@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="static/css/owl.carousel.min.css">
     <link rel="stylesheet" href="static/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/normalize.css">
+   
     <link rel="shortcut icon" href="static/images/imgonline-com-ua-favicon-Jkl6aAwMn8GY.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -99,75 +101,60 @@
       <a href="tel:+375291602853" class="hero-button animate fadeInLeft delay-800" title="Click to see more">позвонить</a>
     </div>
   </section>
-<hr>
+<hr id="consultation">
 
 
 
-  <div class="br100" id="consultation"> <br >
+  <div class="br100" > <br >
     <br>
     <br>
     </div>
   <section class="consult" >
     <h2 class="cons"> КОНСУЛЬТАЦИЯ</h2>
-    <p></p>
-    <p></p>
+    
   </section>
 
   <div class="br100"> <br >
-    <br>
     <br>
     </div>
 
     <div class="forma">
       <div class="form-at">
+        <form action="telegram.php" method="post">
         <div class="validate-input-at w-50" data-validate="Обязательное поле">
-          <input class="input-at" type="text" name="name-at" placeholder="Ваше имя" />
+
+         <input class="input-at" type="text" name="name" placeholder="Ваше имя" />
           <span class="focus-input-at"></span>
         </div>
+        <br>
         <div class="validate-input-at w-50" data-validate="Обязательное поле">
-          <input class="input-at" type="text" name="email-at" placeholder="Ваш телефон или email" />
+          <input class="input-at" type="text" name="phone" placeholder="Ваш телефон" />
           <span class="focus-input-at"></span>
         </div>
-        <div class="validate-input-at" data-validate="Обязательное поле">
-          <textarea class="input-at" name="message-at" placeholder="Ваше сообщение"></textarea>
-          <span class="focus-input-at"></span>
-        </div>
+        
         <input checked="checked" class="input-at" id="checkbox-at" type="checkbox" name="checkbox-at" onchange="document.getElementById('submit-at').disabled = !this.checked;" />
         
-       
         <button id="submit-at" class="form-at-btn">Отправить</button>
       </div>
+    </form>
+
+
+
+
+
+
+
+
       <div class="result-at"></div>
     </div>
 
-
-
-
-
-    <div class="hc-right">
-      <div class="form-block">
-          
-          <div class="form-title">Акция для нoвых клиeнтoв</div>
-          <div class="form-text">Пoлучитe скидку 15% и бeсплатную диагнoстику Вашeгo кoмпьютepа</div>
-          
-          <form action="telegram.php" method="post">
-              <input type="text" name="name" placeholder="Как вас зoвут?">
-              <input type="tel" name="phone" placeholder="Oставьтe свoй нoмep" required="">
-             
-  <button type="submit" class="send-button">Пoлучить консультацию</button>
-</form>
-      
+    <div class="br100"> <br >
+      <br>
+      <br>
+      <br>
+      <br>
       </div>
-  </div>
-</div>
-</div>
-
-
-
-
-
-
-
+<hr>
 
 
 
@@ -526,33 +513,17 @@
 
 
     
-    <!-- КАК МЫ РАБОТАЕМ?
-    <div class="br1">
-<section class="fade-in" class="how" >
-  <h5 class ="howwe">КАК МЫ РАБОТАЕМ?</h5>
-  <ol>
-<li>
-  <div class="iconca">&#9658; </div> Оставьте заявку
-</li>
-<li>  <div class="iconca">&#9658; </div> Мы Вам перезвоним и согласуем визит</li>
-<li>  <div class="iconca">&#9658; </div>  Выбираем вид и модель</li>
-<li>  <div class="iconca">&#9658; </div>  Устанавливаем памятник</li>
-<li>  <div class="iconca">&#9658; </div> Финальный расчет</li>
-</ol>
-</section>
-</div>
- -->
 
 
 
 
 <!-- ПОЧЕМУ МЫ? -->
-<div class="br100">
-    <br id="whywe"> </div>
+<div class="br100" id="whywe">
+    <br> </div>
     <hr>
     <div class="text-wp" >
       <div class="whywe22">
-      <h2 class="fade-in"  style="font-size: 250%" >ПОЧЕМУ МЫ?</h2></div>
+      <h2 class="fade-in"   >ПОЧЕМУ МЫ?</h2></div>
         <div class="text-bg">
           
           <div class="fade-in"> <h1 style=>
@@ -602,6 +573,17 @@
 
 <hr>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="/telegramform/js/telegramform.js"></script>
+
+
+<!-- Маска ввода номера телефона. -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+<script>
+  $(function () {
+    $('input[type="tel"]').mask('+7(000)000-00-00');
+  });
+</script>
 
 
 
@@ -613,6 +595,9 @@
       <script src="static/js/main.js"></script>
       <script src="static/js/script.js"></script>
       <script src="static/js/aos.js"></script>
+      <script src="static/js/inputmask.min.js"></script>
+      <script src="static/js/just-validate.min.js"></script>
+      <script type="module" src="static/js/main.js"></script>
       <script>
         window.onload = function () {
           document.body.classList.add('loaded_hiding');

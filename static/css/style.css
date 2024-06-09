@@ -46,6 +46,7 @@ html {
 	color: #ffffff;
   }
   
+  
   /* АНИМАЦИЯ ПОЯВЛЕНИЯ ЭЛЕМЕНТОВ */
 .fade-in0 {
 	opacity: 0;
@@ -470,7 +471,7 @@ color: #ffffff;
   font-weight: 400;
   font-style: normal;
 	color: #feff36;	
-	font-size: 220%;
+	font-size: 2ch;
 	text-align: center;
 	letter-spacing: 4px;
 	line-height: 50px;
@@ -560,7 +561,7 @@ color: #ffffff;
   font-weight: 400;
   font-style: normal;
 	color: #feff36;	
-	font-size: 250%;
+	font-size: 120%;
 	text-align: center;
 	letter-spacing: 6px;
 	line-height: 60px;
@@ -597,7 +598,7 @@ padding: 30px;
     position:absolute;
     width:100%;
     bottom:10%;
-	height: 200vh;
+	height: 130vh;
 	overflow:auto;
 	position: relative;
 	 
@@ -616,12 +617,12 @@ margin-left: 3px;
   font-weight: 400;
   font-style: normal;
 	color: #feff36;
-	font-size:150%;
+	font-size: 3vw;
 	letter-spacing: 1px;
 	line-height: 50px;
 }
 .text-bg h2{
-	font-size: 100%;
+	font-size: 2.2vw;
 	
 }
 .whywe22{
@@ -633,9 +634,14 @@ margin-left: 3px;
   font-weight: 400;
   font-style: normal;
   line-height: 50px;
-  font-size: 80%;
+  font-size: 2ch;
  
 }
+
+  
+
+
+
 
 
 /* НИЖНЯЯ ПАНЕЛЬ */
@@ -1040,7 +1046,7 @@ margin-left: 3px;
 	color: #feff36;
 	letter-spacing: 4px;
 	background-color: #000000 !important;
-	font-size: 80%;
+	font-size: 1.6ch;
 	
 
 	
@@ -1110,7 +1116,7 @@ margin-left: 3px;
   font-weight: 400;
   font-style: normal;
 	color: #feff36;	
-	font-size: 170%;
+	font-size: 2ch;
 	text-align: center;
 	letter-spacing: 6px;
 	line-height: 50px;
@@ -1143,7 +1149,7 @@ margin-left: 3px;
   font-weight: 400;
   font-style: normal;
 	color: #feff36;	
-	font-size: 150%;
+	font-size: 120%;
 	padding-top: 30px;
 }
 
@@ -1161,7 +1167,7 @@ margin-left: 3px;
   font-weight: 400;
   font-style: normal;
 	color: #feff36;	
-	font-size: 160%;
+	font-size: 120%;
 	text-align: center;
 	letter-spacing: 4px;
 	line-height: 50px;
@@ -1245,7 +1251,11 @@ margin-left: 3px;
 
 
 
+.form-block{
+	box-sizing: border-box;
+	font-family: 'Play', sans-serif;
 
+}
 
 
 
@@ -1276,6 +1286,7 @@ margin-left: 3px;
 .form-at * {
 	box-sizing: border-box;
 	font-family: 'Play', sans-serif;
+	text-align: center;
 }
 .validate-input-at,
 .no-validate-input-at {
@@ -1284,17 +1295,14 @@ margin-left: 3px;
 	background-color: #333333;
 	border: 2px solid #3e3e0f;
 	border-radius: 2px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 .validate-input-at.w-50,
 .no-validate-input-at.w-50 {
 	width: calc(50% - 10px);
 	display: inline-block;
 }
-.validate-input-at.w-50:first-child,
-.no-validate-input-at.w-50:first-child {
-	margin-right: 20px;
-}
+
 .input-at {
 	display: block;
 	width: 100%;
@@ -1357,7 +1365,8 @@ input.input-at:focus {
 	margin: 0 auto;
 	outline: none;
 	border: none;
-	cursor: pointer;		
+	cursor: pointer;	
+
 }
 .form-at-btn:hover {
 	background-color: #ffffff;
@@ -1454,3 +1463,116 @@ input.input-at:focus {
 		opacity: 1;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container-link a {
+	color: #feff36;
+	text-decoration:none;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	position: relative;
+	display:inline-block;
+}	
+.container-link a:hover {
+	color: #feff36;
+	text-decoration:none;
+}		
+.container-link a::before {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	width: 100%;
+	height:1px;
+	background: #feff36;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(6px);
+	-moz-transform: translateY(6px);
+	transform: translateY(6px);
+	pointer-events: none;
+}
+.container-link a:hover::before,
+.container-link a:focus::before {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

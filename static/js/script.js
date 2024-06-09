@@ -231,3 +231,5 @@ $(function() {
 		$(thisAlert).removeClass('alert-validate');
 	}
 });
+
+

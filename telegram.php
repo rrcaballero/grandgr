@@ -3,10 +3,10 @@
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 
-$token = "7240044497:AAF3qEryVqZYtHRCUUhrqvxnX8Hp6ko15rg";
-$chat_id = "422688526";
+$token = "6851579908:AAGMfrB0HMbKhpHyhO1MjWq_Uz4X6dO-hUw";
+$chat_id = "-4242716783";
 $arr = array(
-  'Имя пользователя: ' => $name,
+  'Имя: ' => $name,
   'Телефон: ' => $phone,
  
 );
